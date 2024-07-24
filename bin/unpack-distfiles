@@ -5,7 +5,7 @@
 # 2. Reorg source files, reusing Linux sources as the base for FreeBSD builds.
 #
 LINUX_DIRS="
-	eclipse.platform.swt.binaries/bundles/org.eclipse.swt.gtk.linux.*
+	eclipse.platform.swt/binaries/org.eclipse.swt.gtk.linux.*
 	eclipse.platform/resources/bundles/org.eclipse.core.filesystem/natives/unix/linux
 	eclipse.platform/resources/bundles/org.eclipse.core.filesystem.linux.*
 	eclipse.platform/team/bundles/org.eclipse.core.net.linux*
