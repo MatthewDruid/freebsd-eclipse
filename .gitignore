@@ -13,6 +13,8 @@ distfiles
 # port update
 *.rej
 
+/eclipse.platform.releng.aggregator
+
 # Generated
 *.o
 *.so

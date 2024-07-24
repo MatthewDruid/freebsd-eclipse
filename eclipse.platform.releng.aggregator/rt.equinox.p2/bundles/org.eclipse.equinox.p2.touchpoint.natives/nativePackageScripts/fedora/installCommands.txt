@@ -1,6 +1,0 @@
-installPrefix=pkcon install
-ge=>\=
-gt=>
-le=<\=
-lt=<
-eq=\=
