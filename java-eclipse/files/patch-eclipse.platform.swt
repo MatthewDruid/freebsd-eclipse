@@ -457,7 +457,7 @@ diff -ru eclipse.platform.swt/bundles/org.eclipse.swt/Eclipse SWT PI/gtk/library
  		export SWT_LFLAGS
  	fi
 +    if [ ${SWT_OS} = "freebsd" ]; then
-+        SWT_PTR_CFLAGS="${SWT_PTR_CFLAGS} -m64 -std=c11"
++        SWT_PTR_CFLAGS="${SWT_PTR_CFLAGS} -m64"
 +        export SWT_LFLAGS=-m64
 +    fi
  	export SWT_PTR_CFLAGS
