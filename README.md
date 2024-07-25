@@ -75,3 +75,11 @@ The following modules have been disabled as they involve maven repository
 updates or are uncompilable tests.
 * tests/org.eclipse.swt.tests.gtk
 * eclipse-junit-tests
+
+
+
+# TODO
+
+- [ ] `./eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions`
+- [ ] `./eclipse.pde/apitools/org.eclipse.pde.api.tools/src/org/eclipse/pde/api/tools/internal/model/BundleComponent.java`
+

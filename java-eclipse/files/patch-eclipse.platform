@@ -1,0 +1,190 @@
+diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.aarch64/META-INF/MANIFEST.MF eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.aarch64/META-INF/MANIFEST.MF
+--- eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.aarch64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.aarch64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
+@@ -1,9 +1,9 @@
+ Manifest-Version: 1.0
+ Bundle-ManifestVersion: 2
+ Bundle-Name: %fragmentName
+-Bundle-SymbolicName: org.eclipse.core.filesystem.linux.aarch64;singleton:=true
++Bundle-SymbolicName: org.eclipse.core.filesystem.freebsd.aarch64;singleton:=true
+ Bundle-Version: 1.4.200.qualifier
+ Bundle-Vendor: %providerName
+ Fragment-Host: org.eclipse.core.filesystem;bundle-version="[1.1.0,2.0.0)"
+ Bundle-Localization: fragment
+-Eclipse-PlatformFilter: (& (osgi.os=linux) (osgi.arch=aarch64))
++Eclipse-PlatformFilter: (& (osgi.os=freebsd) (osgi.arch=aarch64))
+diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.aarch64/pom.xml eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.aarch64/pom.xml
+--- eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.aarch64/pom.xml	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.aarch64/pom.xml	0000-00-00 00:00:00.000000000 +0000
+@@ -17,7 +17,7 @@
+     <version>4.32.0-SNAPSHOT</version>
+     <relativePath>../../</relativePath>
+   </parent>
+-  <artifactId>org.eclipse.core.filesystem.linux.aarch64</artifactId>
++  <artifactId>org.eclipse.core.filesystem.freebsd.aarch64</artifactId>
+   <version>1.4.200-SNAPSHOT</version>
+   <packaging>eclipse-plugin</packaging>
+ 
+diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.amd64/META-INF/MANIFEST.MF eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.amd64/META-INF/MANIFEST.MF
+--- eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.amd64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.amd64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
+@@ -1,9 +1,9 @@
+ Manifest-Version: 1.0
+ Bundle-ManifestVersion: 2
+ Bundle-Name: %fragmentName
+-Bundle-SymbolicName: org.eclipse.core.filesystem.linux.x86_64; singleton:=true
++Bundle-SymbolicName: org.eclipse.core.filesystem.freebsd.amd64; singleton:=true
+ Bundle-Version: 1.2.400.qualifier
+ Bundle-Vendor: %providerName
+ Fragment-Host: org.eclipse.core.filesystem;bundle-version="[1.7.200,2.0.0)"
+ Bundle-Localization: fragment
+-Eclipse-PlatformFilter: (& (osgi.os=linux) (osgi.arch=x86_64))
++Eclipse-PlatformFilter: (& (osgi.os=freebsd) (osgi.arch=amd64))
+diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.amd64/pom.xml eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.amd64/pom.xml
+--- eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.amd64/pom.xml	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.amd64/pom.xml	0000-00-00 00:00:00.000000000 +0000
+@@ -17,7 +17,7 @@
+     <version>4.32.0-SNAPSHOT</version>
+     <relativePath>../../</relativePath>
+   </parent>
+-  <artifactId>org.eclipse.core.filesystem.linux.x86_64</artifactId>
++  <artifactId>org.eclipse.core.filesystem.freebsd.amd64</artifactId>
+   <version>1.2.400-SNAPSHOT</version>
+   <packaging>eclipse-plugin</packaging>
+ 
+@@ -28,7 +28,7 @@
+         <property>
+           <!-- This has to be hardcoded. Profiles are not allowed to use pom defined properties :-( -->
+           <name>native</name>
+-          <value>gtk.linux.x86_64</value>
++          <value>gtk.freebsd.amd64</value>
+         </property>
+       </activation>
+       <build>
+@@ -41,10 +41,10 @@
+                 <phase>process-resources</phase>
+                 <configuration>
+                   <target>
+-                    <exec executable="make" newenvironment="false" dir="../org.eclipse.core.filesystem/natives/unix/linux/"/>
+-           <mkdir dir="os/linux/x86_64/"/>
+-           <copy todir="os/linux/x86_64/">
+-           <fileset dir="../org.eclipse.core.filesystem/natives/unix/linux/">
++                    <exec executable="make" newenvironment="false" dir="../org.eclipse.core.filesystem/natives/unix/freebsd/"/>
++           <mkdir dir="os/freebsd/amd64/"/>
++           <copy todir="os/freebsd/amd64/">
++           <fileset dir="../org.eclipse.core.filesystem/natives/unix/freebsd/">
+                <include name="libunixfile_*.so"/>
+            </fileset>
+            </copy>
+diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.loongarch64/META-INF/MANIFEST.MF eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.loongarch64/META-INF/MANIFEST.MF
+--- eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.loongarch64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.loongarch64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
+@@ -1,9 +1,9 @@
+ Manifest-Version: 1.0
+ Bundle-ManifestVersion: 2
+ Bundle-Name: %fragmentName
+-Bundle-SymbolicName: org.eclipse.core.filesystem.linux.loongarch64;singleton:=true
++Bundle-SymbolicName: org.eclipse.core.filesystem.freebsd.loongarch64;singleton:=true
+ Bundle-Version: 1.4.200.qualifier
+ Bundle-Vendor: %providerName
+ Fragment-Host: org.eclipse.core.filesystem;bundle-version="[1.1.0,2.0.0)"
+ Bundle-Localization: fragment
+-Eclipse-PlatformFilter: (& (osgi.os=linux) (osgi.arch=loongarch64))
++Eclipse-PlatformFilter: (& (osgi.os=freebsd) (osgi.arch=loongarch64))
+diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.loongarch64/pom.xml eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.loongarch64/pom.xml
+--- eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.loongarch64/pom.xml	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.loongarch64/pom.xml	0000-00-00 00:00:00.000000000 +0000
+@@ -17,7 +17,7 @@
+     <version>4.32.0-SNAPSHOT</version>
+     <relativePath>../../</relativePath>
+   </parent>
+-  <artifactId>org.eclipse.core.filesystem.linux.loongarch64</artifactId>
++  <artifactId>org.eclipse.core.filesystem.freebsd.loongarch64</artifactId>
+   <version>1.4.200-SNAPSHOT</version>
+   <packaging>eclipse-plugin</packaging>
+ 
+@@ -34,7 +34,7 @@
+         <configuration>
+           <environments>
+             <environment>
+-              <os>linux</os>
++              <os>freebsd</os>
+               <ws>gtk</ws>
+               <arch>loongarch64</arch>
+             </environment>
+diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64/.project eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64/.project
+--- eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64/.project	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64/.project	0000-00-00 00:00:00.000000000 +0000
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <projectDescription>
+-	<name>org.eclipse.core.filesystem.linux.ppc64le</name>
++	<name>org.eclipse.core.filesystem.freebsd.powerpc64</name>
+ 	<comment></comment>
+ 	<projects>
+ 	</projects>
+diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64/META-INF/MANIFEST.MF eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64/META-INF/MANIFEST.MF
+--- eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
+@@ -1,9 +1,9 @@
+ Manifest-Version: 1.0
+ Bundle-ManifestVersion: 2
+ Bundle-Name: %fragmentName
+-Bundle-SymbolicName: org.eclipse.core.filesystem.linux.ppc64le;singleton:=true
++Bundle-SymbolicName: org.eclipse.core.filesystem.freebsd.powerpc64;singleton:=true
+ Bundle-Version: 1.4.200.qualifier
+ Bundle-Vendor: %providerName
+ Fragment-Host: org.eclipse.core.filesystem;bundle-version="[1.1.0,2.0.0)"
+ Bundle-Localization: fragment
+-Eclipse-PlatformFilter: (& (osgi.os=linux) (osgi.arch=ppc64le))
++Eclipse-PlatformFilter: (& (osgi.os=freebsd) (osgi.arch=powerpc64))
+diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64/pom.xml eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64/pom.xml
+--- eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64/pom.xml	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64/pom.xml	0000-00-00 00:00:00.000000000 +0000
+@@ -17,7 +17,7 @@
+     <version>4.32.0-SNAPSHOT</version>
+     <relativePath>../../</relativePath>
+   </parent>
+-  <artifactId>org.eclipse.core.filesystem.linux.ppc64le</artifactId>
++  <artifactId>org.eclipse.core.filesystem.freebsd.powerpc64</artifactId>
+   <version>1.4.200-SNAPSHOT</version>
+   <packaging>eclipse-plugin</packaging>
+ 
+diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64le/.project eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64le/.project
+--- eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64le/.project	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64le/.project	0000-00-00 00:00:00.000000000 +0000
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <projectDescription>
+-	<name>org.eclipse.core.filesystem.linux.ppc64le</name>
++	<name>org.eclipse.core.filesystem.freebsd.powerpc64le</name>
+ 	<comment></comment>
+ 	<projects>
+ 	</projects>
+diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64le/META-INF/MANIFEST.MF eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64le/META-INF/MANIFEST.MF
+--- eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64le/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64le/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
+@@ -1,9 +1,9 @@
+ Manifest-Version: 1.0
+ Bundle-ManifestVersion: 2
+ Bundle-Name: %fragmentName
+-Bundle-SymbolicName: org.eclipse.core.filesystem.linux.ppc64le;singleton:=true
++Bundle-SymbolicName: org.eclipse.core.filesystem.freebsd.powerpc64le;singleton:=true
+ Bundle-Version: 1.4.200.qualifier
+ Bundle-Vendor: %providerName
+ Fragment-Host: org.eclipse.core.filesystem;bundle-version="[1.1.0,2.0.0)"
+ Bundle-Localization: fragment
+-Eclipse-PlatformFilter: (& (osgi.os=linux) (osgi.arch=ppc64le))
++Eclipse-PlatformFilter: (& (osgi.os=freebsd) (osgi.arch=powerpc64le))
+diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64le/pom.xml eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64le/pom.xml
+--- eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64le/pom.xml	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.powerpc64le/pom.xml	0000-00-00 00:00:00.000000000 +0000
+@@ -17,7 +17,7 @@
+     <version>4.32.0-SNAPSHOT</version>
+     <relativePath>../../</relativePath>
+   </parent>
+-  <artifactId>org.eclipse.core.filesystem.linux.ppc64le</artifactId>
++  <artifactId>org.eclipse.core.filesystem.freebsd.powerpc64le</artifactId>
+   <version>1.4.200-SNAPSHOT</version>
+   <packaging>eclipse-plugin</packaging>
+ 

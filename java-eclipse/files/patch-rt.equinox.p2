@@ -1,58 +1,65 @@
-diff -ru rt.equinox.p2/bundles/org.eclipse.equinox.p2.tests.reconciler.product/pom.xml rt.equinox.p2/bundles/org.eclipse.equinox.p2.tests.reconciler.product/pom.xml
---- rt.equinox.p2/bundles/org.eclipse.equinox.p2.tests.reconciler.product/pom.xml	0000-00-00 00:00:00.000000000 +0000
-+++ rt.equinox.p2/bundles/org.eclipse.equinox.p2.tests.reconciler.product/pom.xml	0000-00-00 00:00:00.000000000 +0000
-@@ -39,7 +39,7 @@
- 						</goals>
- 						<configuration>
- 							<formats>
--								<linux>tar.gz</linux>
-+								<freebsd>tar.gz</freebsd>
- 							</formats>
- 						</configuration>
- 					</execution>
-diff -ru rt.equinox.p2/bundles/org.eclipse.equinox.p2.tests.reconciler.product/reconciler.product rt.equinox.p2/bundles/org.eclipse.equinox.p2.tests.reconciler.product/reconciler.product
---- rt.equinox.p2/bundles/org.eclipse.equinox.p2.tests.reconciler.product/reconciler.product	0000-00-00 00:00:00.000000000 +0000
-+++ rt.equinox.p2/bundles/org.eclipse.equinox.p2.tests.reconciler.product/reconciler.product	0000-00-00 00:00:00.000000000 +0000
-@@ -49,7 +49,7 @@
+diff -ru rt.equinox.p2/products/org.eclipse.equinox.p2.installer.product/installer.product rt.equinox.p2/products/org.eclipse.equinox.p2.installer.product/installer.product
+--- rt.equinox.p2/products/org.eclipse.equinox.p2.installer.product/installer.product	0000-00-00 00:00:00.000000000 +0000
++++ rt.equinox.p2/products/org.eclipse.equinox.p2.installer.product/installer.product	0000-00-00 00:00:00.000000000 +0000
+@@ -59,7 +59,7 @@
+       <plugin id="org.eclipse.equinox.launcher"/>
+       <plugin id="org.eclipse.equinox.launcher.cocoa.macosx.x86_64" fragment="true"/>
+       <plugin id="org.eclipse.equinox.launcher.cocoa.macosx.aarch64" fragment="true"/>
+-      <plugin id="org.eclipse.equinox.launcher.gtk.linux.x86_64" fragment="true"/>
++      <plugin id="org.eclipse.equinox.launcher.gtk.freebsd.amd64" fragment="true"/>
+       <plugin id="org.eclipse.equinox.p2.artifact.repository"/>
+       <plugin id="org.eclipse.equinox.p2.core"/>
+       <plugin id="org.eclipse.equinox.p2.director"/>
+@@ -88,7 +88,7 @@
+       <plugin id="org.eclipse.osgi.util"/>
+       <plugin id="org.eclipse.swt"/>
+       <plugin id="org.eclipse.swt.cocoa.macosx" fragment="true"/>
+-      <plugin id="org.eclipse.swt.gtk.linux.x86_64" fragment="true"/>
++      <plugin id="org.eclipse.swt.gtk.freebsd.amd64" fragment="true"/>
+       <plugin id="org.sat4j.core"/>
+       <plugin id="org.sat4j.pb"/>
+       <plugin id="org.tukaani.xz"/>
+diff -ru rt.equinox.p2/products/org.eclipse.equinox.p2.ui.admin.rcp.product/rcp.product rt.equinox.p2/products/org.eclipse.equinox.p2.ui.admin.rcp.product/rcp.product
+--- rt.equinox.p2/products/org.eclipse.equinox.p2.ui.admin.rcp.product/rcp.product	0000-00-00 00:00:00.000000000 +0000
++++ rt.equinox.p2/products/org.eclipse.equinox.p2.ui.admin.rcp.product/rcp.product	0000-00-00 00:00:00.000000000 +0000
+@@ -157,11 +157,11 @@
        <plugin id="org.eclipse.core.expressions"/>
+       <plugin id="org.eclipse.core.filebuffers"/>
+       <plugin id="org.eclipse.core.filesystem"/>
+-      <plugin id="org.eclipse.core.filesystem.linux.x86_64" fragment="true"/>
++      <plugin id="org.eclipse.core.filesystem.freebsd.amd64" fragment="true"/>
+       <plugin id="org.eclipse.core.filesystem.macosx" fragment="true"/>
        <plugin id="org.eclipse.core.jobs"/>
        <plugin id="org.eclipse.core.net"/>
 -      <plugin id="org.eclipse.core.net.linux" fragment="true"/>
 +      <plugin id="org.eclipse.core.net.freebsd" fragment="true"/>
+       <plugin id="org.eclipse.core.resources"/>
        <plugin id="org.eclipse.core.runtime"/>
        <plugin id="org.eclipse.e4.core.commands"/>
-       <plugin id="org.eclipse.e4.core.contexts"/>
-@@ -120,7 +120,7 @@
+@@ -209,7 +209,7 @@
+       <plugin id="org.eclipse.equinox.launcher"/>
+       <plugin id="org.eclipse.equinox.launcher.cocoa.macosx.aarch64" fragment="true"/>
+       <plugin id="org.eclipse.equinox.launcher.cocoa.macosx.x86_64" fragment="true"/>
+-      <plugin id="org.eclipse.equinox.launcher.gtk.linux.x86_64" fragment="true"/>
++      <plugin id="org.eclipse.equinox.launcher.gtk.freebsd.amd64" fragment="true"/>
+       <plugin id="org.eclipse.equinox.p2.artifact.repository"/>
+       <plugin id="org.eclipse.equinox.p2.console"/>
+       <plugin id="org.eclipse.equinox.p2.core"/>
+@@ -235,7 +235,7 @@
        <plugin id="org.eclipse.equinox.preferences"/>
        <plugin id="org.eclipse.equinox.registry"/>
        <plugin id="org.eclipse.equinox.security"/>
 -      <plugin id="org.eclipse.equinox.security.linux" fragment="true"/>
 +      <plugin id="org.eclipse.equinox.security.freebsd" fragment="true"/>
+       <plugin id="org.eclipse.equinox.security.macosx" fragment="true"/>
        <plugin id="org.eclipse.equinox.security.ui"/>
        <plugin id="org.eclipse.equinox.simpleconfigurator"/>
-       <plugin id="org.eclipse.equinox.simpleconfigurator.manipulator"/>
-@@ -133,7 +133,7 @@
-       <plugin id="org.eclipse.osgi.services"/>
+@@ -252,7 +252,7 @@
+       <plugin id="org.eclipse.osgi.util"/>
        <plugin id="org.eclipse.swt"/>
-       <plugin id="org.eclipse.swt.cocoa.macosx.x86_64" fragment="true"/>
+       <plugin id="org.eclipse.swt.cocoa.macosx" fragment="true"/>
 -      <plugin id="org.eclipse.swt.gtk.linux.x86_64" fragment="true"/>
 +      <plugin id="org.eclipse.swt.gtk.freebsd.amd64" fragment="true"/>
-       <plugin id="org.eclipse.swt.win32.win32.x86_64" fragment="true"/>
+       <plugin id="org.eclipse.text"/>
        <plugin id="org.eclipse.ui"/>
-       <plugin id="org.eclipse.ui.workbench"/>
-diff -ru rt.equinox.p2/features/org.eclipse.equinox.p2.core.feature/feature.xml rt.equinox.p2/features/org.eclipse.equinox.p2.core.feature/feature.xml
---- rt.equinox.p2/features/org.eclipse.equinox.p2.core.feature/feature.xml	0000-00-00 00:00:00.000000000 +0000
-+++ rt.equinox.p2/features/org.eclipse.equinox.p2.core.feature/feature.xml	0000-00-00 00:00:00.000000000 +0000
-@@ -177,9 +177,9 @@
-          unpack="false"/>
- 
-    <plugin
--         id="org.eclipse.equinox.security.linux"
--         os="linux"
--         arch="x86_64"
-+         id="org.eclipse.equinox.security.freebsd"
-+         os="freebsd"
-+         arch="amd64"
-          download-size="0"
-          install-size="0"
-          version="0.0.0"
+       <plugin id="org.eclipse.ui.cocoa" fragment="true"/>

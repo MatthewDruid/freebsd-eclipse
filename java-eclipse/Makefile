@@ -2,17 +2,17 @@
 # $FreeBSD$
 
 PORTNAME=	eclipse
-PORTVERSION=	4.24
+PORTVERSION=	4.32
 CATEGORIES=	java devel
 
 # Tag's Timestamp on eclipse-platform/eclipse.platform.releng.aggregator github.com
-ECLIPSE_TAG=	R4_24
-ECLIPSE_TSTAMP=	20220616-0004
+ECLIPSE_TAG=	R4_32
+ECLIPSE_TSTAMP= 20240601-0610
 
 DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	jonc@chen.org.nz
-COMMENT=	Eclipse IDE 2022-06
+COMMENT=	Eclipse IDE 2024-06
 
 LICENSE=	EPL
 
@@ -53,7 +53,7 @@ GH_TUPLE=	eclipse-platform:eclipse.platform.releng.aggregator:${ECLIPSE_TAG} \
 		eclipse-equinox:p2:${ECLIPSE_TAG}:w/rt.equinox.p2 \
 		daemonblade:eclipse-maven-repo:${PORTVERSION}:x
 
-USE_JAVA=	11+
+USE_JAVA=	17+
 
 PORTSCOUT=	ignore:1
 

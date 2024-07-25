@@ -5,6 +5,9 @@
 # 2. Reorg source files, reusing Linux sources as the base for FreeBSD builds.
 #
 LINUX_DIRS="
+    eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.linux.aarch64-3.125.0.v20240227-1638.api_description
+    eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.linux.ppc64le-3.125.0.v20240227-1638.api_description
+    eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.linux.x86-64-3.125.0.v20240227-1638.api_description
 	eclipse.platform.swt/binaries/org.eclipse.swt.gtk.linux.*
 	eclipse.platform/resources/bundles/org.eclipse.core.filesystem/natives/unix/linux
 	eclipse.platform/resources/bundles/org.eclipse.core.filesystem.linux.*
@@ -61,12 +64,18 @@ rename_arch ()
 	case $F in
 	*.arm)
 		echo $(echo $F | sed -e 's/arm/armv7/');;
+	*.arm-*)
+		echo $(echo $F | sed -e 's/arm/armv7/');;
 	*.ppc64le)
+		echo $(echo $F | sed -e 's/ppc64le/powerpc64/');;
+	*.ppc64le-*)
 		echo $(echo $F | sed -e 's/ppc64le/powerpc64/');;
 	*.x86)
 		echo $(echo $F | sed -e 's/x86/i386/');;
 	*.x86_64)
 		echo $(echo $F | sed -e 's/x86_64/amd64/');;
+    *.x86_64-*)
+        echo $(echo $F | sed -e 's/x86_64/amd64/');;
 	*)
 		echo ${F};;
 	esac
@@ -89,6 +98,8 @@ rename_arch ()
 		# Duplicate "powerpc64" into "powerpc64le"
 		case ${NEWNAME} in
 		*.powerpc64)
+			cp -rf ${NEWNAME} `echo ${NEWNAME} | sed -e 's/powerpc64/powerpc64le/'`;;
+		*.powerpc64-*)
 			cp -rf ${NEWNAME} `echo ${NEWNAME} | sed -e 's/powerpc64/powerpc64le/'`;;
 		esac
 	done

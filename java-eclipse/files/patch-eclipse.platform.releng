@@ -1,19 +1,19 @@
 diff -ru eclipse.platform.releng/features/org.eclipse.platform-feature/feature.xml eclipse.platform.releng/features/org.eclipse.platform-feature/feature.xml
 --- eclipse.platform.releng/features/org.eclipse.platform-feature/feature.xml	0000-00-00 00:00:00.000000000 +0000
 +++ eclipse.platform.releng/features/org.eclipse.platform-feature/feature.xml	0000-00-00 00:00:00.000000000 +0000
-@@ -96,8 +96,8 @@
-          unpack="false"/>
+@@ -70,8 +70,8 @@
+          version="0.0.0"/>
  
     <plugin
 -         id="org.eclipse.core.net.linux"
 -         os="linux"
 +         id="org.eclipse.core.net.freebsd"
 +         os="freebsd"
-          download-size="0"
-          install-size="0"
-          version="0.0.0"
-@@ -363,9 +363,9 @@
-          unpack="false"/>
+          version="0.0.0"/>
+ 
+    <plugin
+@@ -217,9 +217,9 @@
+          version="0.0.0"/>
  
     <plugin
 -         id="org.eclipse.core.filesystem.linux.x86_64"
@@ -22,11 +22,11 @@ diff -ru eclipse.platform.releng/features/org.eclipse.platform-feature/feature.x
 +         id="org.eclipse.core.filesystem.freebsd.amd64"
 +         os="freebsd"
 +         arch="amd64"
-          download-size="0"
-          install-size="0"
-          version="0.0.0"
-@@ -402,18 +402,27 @@
-          unpack="false"/>
+          version="0.0.0"/>
+ 
+    <plugin
+@@ -240,14 +240,19 @@
+          version="0.0.0"/>
  
     <plugin
 -         id="org.eclipse.core.filesystem.linux.ppc64le"
@@ -35,20 +35,12 @@ diff -ru eclipse.platform.releng/features/org.eclipse.platform-feature/feature.x
 +         id="org.eclipse.core.filesystem.freebsd.powerpc64"
 +         os="freebsd"
 +         arch="powerpc64"
-          download-size="0"
-          install-size="0"
-          version="0.0.0"
-          fragment="true"
-          unpack="false"/>
+          version="0.0.0"/>
 +   <plugin
 +         id="org.eclipse.core.filesystem.freebsd.powerpc64le"
 +         os="freebsd"
 +         arch="powerpc64le"
-+         download-size="0"
-+         install-size="0"
-+         version="0.0.0"
-+         fragment="true"
-+         unpack="false"/>
++         version="0.0.0"/>
  
     <plugin
 -         id="org.eclipse.core.filesystem.linux.aarch64"
@@ -56,19 +48,19 @@ diff -ru eclipse.platform.releng/features/org.eclipse.platform-feature/feature.x
 +         id="org.eclipse.core.filesystem.freebsd.aarch64"
 +         os="freebsd"
           arch="aarch64"
-          download-size="0"
-          install-size="0"
-@@ -476,8 +485,8 @@
-          unpack="false"/>
+          version="0.0.0"/>
+ 
+@@ -282,8 +287,8 @@
+          version="0.0.0"/>
  
     <plugin
 -         id="org.eclipse.equinox.security.linux"
 -         os="linux"
 +         id="org.eclipse.equinox.security.freebsd"
 +         os="freebsd"
-          download-size="0"
-          install-size="0"
-          version="0.0.0"
+          version="0.0.0"/>
+ 
+    <plugin
 diff -ru eclipse.platform.releng/features/org.eclipse.platform-feature/pom.xml eclipse.platform.releng/features/org.eclipse.platform-feature/pom.xml
 --- eclipse.platform.releng/features/org.eclipse.platform-feature/pom.xml	0000-00-00 00:00:00.000000000 +0000
 +++ eclipse.platform.releng/features/org.eclipse.platform-feature/pom.xml	0000-00-00 00:00:00.000000000 +0000

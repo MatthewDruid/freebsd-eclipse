@@ -1,3 +1,96 @@
+diff -ru eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.aarch64-3.125.0.v20240227-1638.api_description eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.aarch64-3.125.0.v20240227-1638.api_description
+--- eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.aarch64-3.125.0.v20240227-1638.api_description	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.aarch64-3.125.0.v20240227-1638.api_description	0000-00-00 00:00:00.000000000 +0000
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+-<component name="org.eclipse.swt.gtk.linux.aarch64_3.125.0.v20240206-1259" version="1.2">
+-    <plugin id="org.eclipse.swt.gtk.linux.aarch64_3.125.0.v20240206-1259"/>
++<component name="org.eclipse.swt.gtk.freebsd.aarch64_3.125.0.v20240206-1259" version="1.2">
++    <plugin id="org.eclipse.swt.gtk.freebsd.aarch64_3.125.0.v20240206-1259"/>
+     <package name="org.eclipse.swt.accessibility" visibility="1">
+         <type name="Accessible" restrictions="0">
+             <method name="internal_dispose_Accessible" restrictions="8" signature="()V"/>
+@@ -190,4 +190,4 @@
+             <method name="removeListener" restrictions="24" signature="(ILorg/eclipse/swt/internal/SWTEventListener;)V"/>
+         </type>
+     </package>
+-</component>
+\ No newline at end of file
++</component>
+diff -ru eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.powerpc64-3.125.0.v20240227-1638.api_description eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.powerpc64-3.125.0.v20240227-1638.api_description
+--- eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.powerpc64-3.125.0.v20240227-1638.api_description	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.powerpc64-3.125.0.v20240227-1638.api_description	0000-00-00 00:00:00.000000000 +0000
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+-<component name="org.eclipse.swt.gtk.linux.ppc64le_3.125.0.v20240206-1259" version="1.2">
+-    <plugin id="org.eclipse.swt.gtk.linux.ppc64le_3.125.0.v20240206-1259"/>
++<component name="org.eclipse.swt.gtk.freebsd.powerpc64_3.125.0.v20240206-1259" version="1.2">
++    <plugin id="org.eclipse.swt.gtk.freebsd.powerpc64_3.125.0.v20240206-1259"/>
+     <package name="org.eclipse.swt.accessibility" visibility="1">
+         <type name="Accessible" restrictions="0">
+             <method name="internal_dispose_Accessible" restrictions="8" signature="()V"/>
+@@ -190,4 +190,4 @@
+             <method name="removeListener" restrictions="24" signature="(ILorg/eclipse/swt/internal/SWTEventListener;)V"/>
+         </type>
+     </package>
+-</component>
+\ No newline at end of file
++</component>
+diff -ru eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.powerpc64le-3.125.0.v20240227-1638.api_description eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.powerpc64le-3.125.0.v20240227-1638.api_description
+--- eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.powerpc64le-3.125.0.v20240227-1638.api_description	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.powerpc64le-3.125.0.v20240227-1638.api_description	0000-00-00 00:00:00.000000000 +0000
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+-<component name="org.eclipse.swt.gtk.linux.ppc64le_3.125.0.v20240206-1259" version="1.2">
+-    <plugin id="org.eclipse.swt.gtk.linux.ppc64le_3.125.0.v20240206-1259"/>
++<component name="org.eclipse.swt.gtk.freebsd.powerpc64le_3.125.0.v20240206-1259" version="1.2">
++    <plugin id="org.eclipse.swt.gtk.freebsd.powerpc64le_3.125.0.v20240206-1259"/>
+     <package name="org.eclipse.swt.accessibility" visibility="1">
+         <type name="Accessible" restrictions="0">
+             <method name="internal_dispose_Accessible" restrictions="8" signature="()V"/>
+@@ -190,4 +190,4 @@
+             <method name="removeListener" restrictions="24" signature="(ILorg/eclipse/swt/internal/SWTEventListener;)V"/>
+         </type>
+     </package>
+-</component>
+\ No newline at end of file
++</component>
+diff -ru eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.x86-64-3.125.0.v20240227-1638.api_description eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.x86-64-3.125.0.v20240227-1638.api_description
+--- eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.x86-64-3.125.0.v20240227-1638.api_description	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.pde/apitools/org.eclipse.pde.api.tools/fixed_api_descriptions/org.eclipse.swt.gtk.freebsd.x86-64-3.125.0.v20240227-1638.api_description	0000-00-00 00:00:00.000000000 +0000
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+-<component name="org.eclipse.swt.gtk.linux.x86_64_3.125.0.v20240206-1259" version="1.2">
+-    <plugin id="org.eclipse.swt.gtk.linux.x86_64_3.125.0.v20240206-1259"/>
++<component name="org.eclipse.swt.gtk.freebsd.amd64_3.125.0.v20240206-1259" version="1.2">
++    <plugin id="org.eclipse.swt.gtk.freebsd.amd64_3.125.0.v20240206-1259"/>
+     <package name="org.eclipse.swt.accessibility" visibility="1">
+         <type name="Accessible" restrictions="0">
+             <method name="internal_dispose_Accessible" restrictions="8" signature="()V"/>
+@@ -190,4 +190,4 @@
+             <method name="removeListener" restrictions="24" signature="(ILorg/eclipse/swt/internal/SWTEventListener;)V"/>
+         </type>
+     </package>
+-</component>
+\ No newline at end of file
++</component>
+diff -ru eclipse.pde/apitools/org.eclipse.pde.api.tools/src/org/eclipse/pde/api/tools/internal/model/BundleComponent.java eclipse.pde/apitools/org.eclipse.pde.api.tools/src/org/eclipse/pde/api/tools/internal/model/BundleComponent.java
+--- eclipse.pde/apitools/org.eclipse.pde.api.tools/src/org/eclipse/pde/api/tools/internal/model/BundleComponent.java	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.pde/apitools/org.eclipse.pde.api.tools/src/org/eclipse/pde/api/tools/internal/model/BundleComponent.java	0000-00-00 00:00:00.000000000 +0000
+@@ -798,9 +798,10 @@
+ 	// Content is from 3.125.0.v20240206-1259, id's are from 4.31 release
+ 	private static final List<String> FIXED_API_DESCRIPTIONS = Arrays.asList(
+ 			"org.eclipse.swt.win32.win32.x86-64-3.125.0.v20240227-1638", //$NON-NLS-1$
+-			"org.eclipse.swt.gtk.linux.x86-64-3.125.0.v20240227-1638", //$NON-NLS-1$
+-			"org.eclipse.swt.gtk.linux.ppc64le-3.125.0.v20240227-1638", //$NON-NLS-1$
+-			"org.eclipse.swt.gtk.linux.aarch64-3.125.0.v20240227-1638", //$NON-NLS-1$
++			"org.eclipse.swt.gtk.freebsd.amd64-3.125.0.v20240227-1638", //$NON-NLS-1$
++			"org.eclipse.swt.gtk.freebsd.powerpc64-3.125.0.v20240227-1638", //$NON-NLS-1$
++			"org.eclipse.swt.gtk.freebsd.powerpc64le-3.125.0.v20240227-1638", //$NON-NLS-1$
++			"org.eclipse.swt.gtk.freebsd.aarch64-3.125.0.v20240227-1638", //$NON-NLS-1$
+ 			"org.eclipse.swt.cocoa.macosx.aarch64-3.125.0.v20240227-1638", //$NON-NLS-1$
+ 			"org.eclipse.swt.cocoa.macosx.x86-64-3.125.0.v20240227-1638" //$NON-NLS-1$
+ 	);
 diff -ru eclipse.pde/build/org.eclipse.pde.build/scripts/productBuild/allElements.xml eclipse.pde/build/org.eclipse.pde.build/scripts/productBuild/allElements.xml
 --- eclipse.pde/build/org.eclipse.pde.build/scripts/productBuild/allElements.xml	0000-00-00 00:00:00.000000000 +0000
 +++ eclipse.pde/build/org.eclipse.pde.build/scripts/productBuild/allElements.xml	0000-00-00 00:00:00.000000000 +0000
@@ -18,7 +111,7 @@ diff -ru eclipse.pde/build/org.eclipse.pde.build/scripts/productBuild/allElement
 diff -ru eclipse.pde/build/org.eclipse.pde.build/src/org/eclipse/pde/internal/build/Utils.java eclipse.pde/build/org.eclipse.pde.build/src/org/eclipse/pde/internal/build/Utils.java
 --- eclipse.pde/build/org.eclipse.pde.build/src/org/eclipse/pde/internal/build/Utils.java	0000-00-00 00:00:00.000000000 +0000
 +++ eclipse.pde/build/org.eclipse.pde.build/src/org/eclipse/pde/internal/build/Utils.java	0000-00-00 00:00:00.000000000 +0000
-@@ -694,7 +694,7 @@
+@@ -646,7 +646,7 @@
  			arguments.add("-sf"); //$NON-NLS-1$
  			arguments.add(links[i]);
  			arguments.add(links[i + 1]);
@@ -30,7 +123,7 @@ diff -ru eclipse.pde/build/org.eclipse.pde.build/src/org/eclipse/pde/internal/bu
 diff -ru eclipse.pde/build/org.eclipse.pde.build/src/org/eclipse/pde/internal/build/builder/ModelBuildScriptGenerator.java eclipse.pde/build/org.eclipse.pde.build/src/org/eclipse/pde/internal/build/builder/ModelBuildScriptGenerator.java
 --- eclipse.pde/build/org.eclipse.pde.build/src/org/eclipse/pde/internal/build/builder/ModelBuildScriptGenerator.java	0000-00-00 00:00:00.000000000 +0000
 +++ eclipse.pde/build/org.eclipse.pde.build/src/org/eclipse/pde/internal/build/builder/ModelBuildScriptGenerator.java	0000-00-00 00:00:00.000000000 +0000
-@@ -912,7 +912,7 @@
+@@ -922,7 +922,7 @@
  		for (int i = 0; i < links.length; i += 2) {
  			arguments.add(links[i]);
  			arguments.add(links[i + 1]);
@@ -42,7 +135,7 @@ diff -ru eclipse.pde/build/org.eclipse.pde.build/src/org/eclipse/pde/internal/bu
 diff -ru eclipse.pde/build/org.eclipse.pde.build/src_ant/org/eclipse/pde/internal/build/tasks/JNLPGenerator.java eclipse.pde/build/org.eclipse.pde.build/src_ant/org/eclipse/pde/internal/build/tasks/JNLPGenerator.java
 --- eclipse.pde/build/org.eclipse.pde.build/src_ant/org/eclipse/pde/internal/build/tasks/JNLPGenerator.java	0000-00-00 00:00:00.000000000 +0000
 +++ eclipse.pde/build/org.eclipse.pde.build/src_ant/org/eclipse/pde/internal/build/tasks/JNLPGenerator.java	0000-00-00 00:00:00.000000000 +0000
-@@ -308,8 +308,8 @@
+@@ -323,8 +323,8 @@
  			return "Windows"; //$NON-NLS-1$
  		if ("macosx".equalsIgnoreCase(os)) //$NON-NLS-1$
  			return "Mac"; //$NON-NLS-1$
@@ -80,7 +173,7 @@ diff -ru eclipse.pde/build/org.eclipse.pde.build/templates/packager/packaging.pr
 diff -ru eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/product/ConfigurationSection.java eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/product/ConfigurationSection.java
 --- eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/product/ConfigurationSection.java	0000-00-00 00:00:00.000000000 +0000
 +++ eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/product/ConfigurationSection.java	0000-00-00 00:00:00.000000000 +0000
-@@ -56,8 +56,8 @@
+@@ -69,8 +69,8 @@
  	private FormEntry fCustomEntry;
  	private boolean fBlockChanges;
  
@@ -94,7 +187,7 @@ diff -ru eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/edito
 diff -ru eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/product/JRESection.java eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/product/JRESection.java
 --- eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/product/JRESection.java	0000-00-00 00:00:00.000000000 +0000
 +++ eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/editor/product/JRESection.java	0000-00-00 00:00:00.000000000 +0000
-@@ -69,8 +69,8 @@
+@@ -80,8 +80,8 @@
  	private ComboViewerPart fEEsCombo;
  	private boolean fBlockChanges;
  
@@ -108,7 +201,7 @@ diff -ru eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/edito
 diff -ru eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/wizards/product/ProductIntroOperation.java eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/wizards/product/ProductIntroOperation.java
 --- eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/wizards/product/ProductIntroOperation.java	0000-00-00 00:00:00.000000000 +0000
 +++ eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/wizards/product/ProductIntroOperation.java	0000-00-00 00:00:00.000000000 +0000
-@@ -130,7 +130,7 @@
+@@ -149,7 +149,7 @@
  		implementation.setName("implementation"); //$NON-NLS-1$
  		implementation.setAttribute("kind", "html"); //$NON-NLS-1$ //$NON-NLS-2$
  		implementation.setAttribute("style", "content/shared.css"); //$NON-NLS-1$ //$NON-NLS-2$
@@ -120,7 +213,7 @@ diff -ru eclipse.pde/ui/org.eclipse.pde.ui/src/org/eclipse/pde/internal/ui/wizar
 diff -ru eclipse.pde/ui/org.eclipse.pde.ui.templates/src/org/eclipse/pde/internal/ui/templates/rcp/IntroTemplate.java eclipse.pde/ui/org.eclipse.pde.ui.templates/src/org/eclipse/pde/internal/ui/templates/rcp/IntroTemplate.java
 --- eclipse.pde/ui/org.eclipse.pde.ui.templates/src/org/eclipse/pde/internal/ui/templates/rcp/IntroTemplate.java	0000-00-00 00:00:00.000000000 +0000
 +++ eclipse.pde/ui/org.eclipse.pde.ui.templates/src/org/eclipse/pde/internal/ui/templates/rcp/IntroTemplate.java	0000-00-00 00:00:00.000000000 +0000
-@@ -162,7 +162,7 @@
+@@ -170,7 +170,7 @@
  		presentationElement.setAttribute("home-page-id", "root"); //$NON-NLS-1$ //$NON-NLS-2$
  		IPluginElement implementationElement = factory.createElement(presentationElement);
  		implementationElement.setName("implementation"); //$NON-NLS-1$
@@ -129,18 +222,3 @@ diff -ru eclipse.pde/ui/org.eclipse.pde.ui.templates/src/org/eclipse/pde/interna
  		if (getTargetVersion() == 3.0)
  			implementationElement.setAttribute("style", "content/shared.css"); //$NON-NLS-1$//$NON-NLS-2$
  
-diff -ru eclipse.pde/ui/org.eclipse.pde.ui.templates/templates_3.5/E4Application/$pluginId$.product eclipse.pde/ui/org.eclipse.pde.ui.templates/templates_3.5/E4Application/$pluginId$.product
---- eclipse.pde/ui/org.eclipse.pde.ui.templates/templates_3.5/E4Application/$pluginId$.product	0000-00-00 00:00:00.000000000 +0000
-+++ eclipse.pde/ui/org.eclipse.pde.ui.templates/templates_3.5/E4Application/$pluginId$.product	0000-00-00 00:00:00.000000000 +0000
-@@ -84,8 +84,9 @@
-       <plugin id="org.osgi.util.promise"/>
-       <plugin id="org.eclipse.swt"/>
-       <plugin id="org.eclipse.swt.cocoa.macosx.x86_64" fragment="true"/>
--      <plugin id="org.eclipse.swt.gtk.linux.ppc64" fragment="true"/>
--      <plugin id="org.eclipse.swt.gtk.linux.x86_64" fragment="true"/>
-+      <plugin id="org.eclipse.swt.gtk.freebsd.powerpc64" fragment="true"/>
-+      <plugin id="org.eclipse.swt.gtk.freebsd.powerpc64le" fragment="true"/>
-+      <plugin id="org.eclipse.swt.gtk.freebsd.amd64" fragment="true"/>
-       <plugin id="org.eclipse.swt.win32.win32.x86_64" fragment="true"/>
-       <plugin id="org.eclipse.urischeme"/>
-       <plugin id="org.w3c.css.sac"/>

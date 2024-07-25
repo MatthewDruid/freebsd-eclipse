@@ -1,0 +1,230 @@
+diff -ru equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.aarch64/.project equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.aarch64/.project
+--- equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.aarch64/.project	0000-00-00 00:00:00.000000000 +0000
++++ equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.aarch64/.project	0000-00-00 00:00:00.000000000 +0000
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <projectDescription>
+-	<name>org.eclipse.equinox.launcher.gtk.linux.aarch64</name>
++	<name>org.eclipse.equinox.launcher.gtk.freebsd.aarch64</name>
+ 	<comment></comment>
+ 	<projects>
+ 	</projects>
+diff -ru equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.aarch64/META-INF/MANIFEST.MF equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.aarch64/META-INF/MANIFEST.MF
+--- equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.aarch64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
++++ equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.aarch64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
+@@ -2,9 +2,9 @@
+ Bundle-ManifestVersion: 2
+ Bundle-Name: %pluginName
+ Bundle-Vendor: %providerName
+-Bundle-SymbolicName: org.eclipse.equinox.launcher.gtk.linux.aarch64;singleton:=true
++Bundle-SymbolicName: org.eclipse.equinox.launcher.gtk.freebsd.aarch64;singleton:=true
+ Bundle-Version: 1.2.1000.qualifier
+ Fragment-Host: org.eclipse.equinox.launcher;bundle-version="[1.5.0,1.7.0)"
+-Eclipse-PlatformFilter: (& (osgi.ws=gtk) (osgi.os=linux) (osgi.arch=aarch64))
+-Bundle-Localization: launcher.gtk.linux.aarch64
++Eclipse-PlatformFilter: (& (osgi.ws=gtk) (osgi.os=freebsd) (osgi.arch=aarch64))
++Bundle-Localization: launcher.gtk.freebsd.aarch64
+ Eclipse-BundleShape: dir
+diff -ru equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.amd64/.project equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.amd64/.project
+--- equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.amd64/.project	0000-00-00 00:00:00.000000000 +0000
++++ equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.amd64/.project	0000-00-00 00:00:00.000000000 +0000
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <projectDescription>
+-	<name>org.eclipse.equinox.launcher.gtk.linux.x86_64</name>
++	<name>org.eclipse.equinox.launcher.gtk.freebsd.amd64</name>
+ 	<comment></comment>
+ 	<projects>
+ 	</projects>
+diff -ru equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.amd64/META-INF/MANIFEST.MF equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.amd64/META-INF/MANIFEST.MF
+--- equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.amd64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
++++ equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.amd64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
+@@ -2,9 +2,9 @@
+ Bundle-ManifestVersion: 2
+ Bundle-Name: %pluginName
+ Bundle-Vendor: %providerName
+-Bundle-SymbolicName: org.eclipse.equinox.launcher.gtk.linux.x86_64;singleton:=true
++Bundle-SymbolicName: org.eclipse.equinox.launcher.gtk.freebsd.amd64;singleton:=true
+ Bundle-Version: 1.2.1000.qualifier
+ Fragment-Host: org.eclipse.equinox.launcher;bundle-version="[1.5.0,1.7.0)"
+-Eclipse-PlatformFilter: (& (osgi.ws=gtk) (osgi.os=linux) (osgi.arch=x86_64))
+-Bundle-Localization: launcher.gtk.linux.x86_64
++Eclipse-PlatformFilter: (& (osgi.ws=gtk) (osgi.os=freebsd) (osgi.arch=amd64))
++Bundle-Localization: launcher.gtk.freebsd.amd64
+ Eclipse-BundleShape: dir
+diff -ru equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.loongarch64/.project equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.loongarch64/.project
+--- equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.loongarch64/.project	0000-00-00 00:00:00.000000000 +0000
++++ equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.loongarch64/.project	0000-00-00 00:00:00.000000000 +0000
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <projectDescription>
+-	<name>org.eclipse.equinox.launcher.gtk.linux.loongarch64</name>
++	<name>org.eclipse.equinox.launcher.gtk.freebsd.loongarch64</name>
+ 	<comment></comment>
+ 	<projects>
+ 	</projects>
+diff -ru equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.loongarch64/META-INF/MANIFEST.MF equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.loongarch64/META-INF/MANIFEST.MF
+--- equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.loongarch64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
++++ equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.loongarch64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
+@@ -2,9 +2,9 @@
+ Bundle-ManifestVersion: 2
+ Bundle-Name: %pluginName
+ Bundle-Vendor: %providerName
+-Bundle-SymbolicName: org.eclipse.equinox.launcher.gtk.linux.loongarch64;singleton:=true
++Bundle-SymbolicName: org.eclipse.equinox.launcher.gtk.freebsd.loongarch64;singleton:=true
+ Bundle-Version: 1.2.1000.qualifier
+ Fragment-Host: org.eclipse.equinox.launcher;bundle-version="[1.5.0,1.7.0)"
+-Eclipse-PlatformFilter: (& (osgi.ws=gtk) (osgi.os=linux) (osgi.arch=loongarch64))
+-Bundle-Localization: launcher.gtk.linux.loongarch64
++Eclipse-PlatformFilter: (& (osgi.ws=gtk) (osgi.os=freebsd) (osgi.arch=loongarch64))
++Bundle-Localization: launcher.gtk.freebsd.loongarch64
+ Eclipse-BundleShape: dir
+diff -ru equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64/.project equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64/.project
+--- equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64/.project	0000-00-00 00:00:00.000000000 +0000
++++ equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64/.project	0000-00-00 00:00:00.000000000 +0000
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <projectDescription>
+-	<name>org.eclipse.equinox.launcher.gtk.linux.ppc64le</name>
++	<name>org.eclipse.equinox.launcher.gtk.freebsd.powerpc64</name>
+ 	<comment></comment>
+ 	<projects>
+ 	</projects>
+diff -ru equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64/META-INF/MANIFEST.MF equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64/META-INF/MANIFEST.MF
+--- equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
++++ equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
+@@ -2,9 +2,9 @@
+ Bundle-ManifestVersion: 2
+ Bundle-Name: %pluginName
+ Bundle-Vendor: %providerName
+-Bundle-SymbolicName: org.eclipse.equinox.launcher.gtk.linux.ppc64le;singleton:=true
++Bundle-SymbolicName: org.eclipse.equinox.launcher.gtk.freebsd.powerpc64;singleton:=true
+ Bundle-Version: 1.2.1000.qualifier
+ Fragment-Host: org.eclipse.equinox.launcher;bundle-version="[1.5.0,1.7.0)"
+-Eclipse-PlatformFilter: (& (osgi.ws=gtk) (osgi.os=linux) (osgi.arch=ppc64le))
+-Bundle-Localization: launcher.gtk.linux.ppc64le
++Eclipse-PlatformFilter: (& (osgi.ws=gtk) (osgi.os=freebsd) (osgi.arch=powerpc64))
++Bundle-Localization: launcher.gtk.freebsd.powerpc64
+ Eclipse-BundleShape: dir
+diff -ru equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le/.project equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le/.project
+--- equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le/.project	0000-00-00 00:00:00.000000000 +0000
++++ equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le/.project	0000-00-00 00:00:00.000000000 +0000
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <projectDescription>
+-	<name>org.eclipse.equinox.launcher.gtk.linux.ppc64le</name>
++	<name>org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le</name>
+ 	<comment></comment>
+ 	<projects>
+ 	</projects>
+diff -ru equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le/META-INF/MANIFEST.MF equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le/META-INF/MANIFEST.MF
+--- equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
++++ equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le/META-INF/MANIFEST.MF	0000-00-00 00:00:00.000000000 +0000
+@@ -2,9 +2,9 @@
+ Bundle-ManifestVersion: 2
+ Bundle-Name: %pluginName
+ Bundle-Vendor: %providerName
+-Bundle-SymbolicName: org.eclipse.equinox.launcher.gtk.linux.ppc64le;singleton:=true
++Bundle-SymbolicName: org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le;singleton:=true
+ Bundle-Version: 1.2.1000.qualifier
+ Fragment-Host: org.eclipse.equinox.launcher;bundle-version="[1.5.0,1.7.0)"
+-Eclipse-PlatformFilter: (& (osgi.ws=gtk) (osgi.os=linux) (osgi.arch=ppc64le))
+-Bundle-Localization: launcher.gtk.linux.ppc64le
++Eclipse-PlatformFilter: (& (osgi.ws=gtk) (osgi.os=freebsd) (osgi.arch=powerpc64le))
++Bundle-Localization: launcher.gtk.freebsd.powerpc64le
+ Eclipse-BundleShape: dir
+diff -ru equinox/features/org.eclipse.equinox.executable.feature/feature.xml equinox/features/org.eclipse.equinox.executable.feature/feature.xml
+--- equinox/features/org.eclipse.equinox.executable.feature/feature.xml	0000-00-00 00:00:00.000000000 +0000
++++ equinox/features/org.eclipse.equinox.executable.feature/feature.xml	0000-00-00 00:00:00.000000000 +0000
+@@ -24,10 +24,10 @@
+          version="0.0.0"/>
+ 
+    <plugin
+-         id="org.eclipse.equinox.launcher.cocoa.macosx.x86_64"
++         id="org.eclipse.equinox.launcher.cocoa.macosx.amd64"
+          os="macosx"
+          ws="cocoa"
+-         arch="x86_64"
++         arch="amd64"
+          version="0.0.0"/>
+ 
+    <plugin
+@@ -45,24 +45,31 @@
+          version="0.0.0"/>
+ 
+    <plugin
+-         id="org.eclipse.equinox.launcher.gtk.linux.ppc64le"
+-         os="linux"
++         id="org.eclipse.equinox.launcher.gtk.freebsd.powerpc64"
++         os="freebsd"
+          ws="gtk"
+-         arch="ppc64le"
++         arch="powerpc64"
+          version="0.0.0"/>
+ 
+    <plugin
+-         id="org.eclipse.equinox.launcher.gtk.linux.aarch64"
+-         os="linux"
++         id="org.eclipse.equinox.launcher.gtk.freebsd.powerpc64"
++         os="freebsd"
+          ws="gtk"
++         arch="powerpc64le"
++         version="0.0.0"/>
++
++   <plugin
++         id="org.eclipse.equinox.launcher.gtk.freebsd.aarch64"
++         os="freebsd"
++         ws="gtk"
+          arch="aarch64"
+          version="0.0.0"/>
+ 
+    <plugin
+-         id="org.eclipse.equinox.launcher.gtk.linux.x86_64"
+-         os="linux"
++         id="org.eclipse.equinox.launcher.gtk.freebsd.amd64"
++         os="freebsd"
+          ws="gtk"
+-         arch="x86_64"
++         arch="amd64"
+          version="0.0.0"/>
+ 
+    <plugin
+@@ -73,10 +80,10 @@
+          version="0.0.0"/>
+ 
+    <plugin
+-         id="org.eclipse.equinox.launcher.win32.win32.x86_64"
++         id="org.eclipse.equinox.launcher.win32.win32.amd64"
+          os="win32"
+          ws="win32"
+-         arch="x86_64"
++         arch="amd64"
+          version="0.0.0"/>
+ 
+ </feature>
+diff -ru equinox/pom.xml equinox/pom.xml
+--- equinox/pom.xml	0000-00-00 00:00:00.000000000 +0000
++++ equinox/pom.xml	0000-00-00 00:00:00.000000000 +0000
+@@ -175,7 +175,7 @@
+ 		    <module>bundles/org.eclipse.equinox.security</module>
+ 		    <module>bundles/org.eclipse.equinox.security.macosx</module>
+ 		    <module>bundles/org.eclipse.equinox.security.win32</module>
+-		    <module>bundles/org.eclipse.equinox.security.linux</module>
++		    <module>bundles/org.eclipse.equinox.security.freebsd</module>
+ 		    <module>bundles/org.eclipse.equinox.bidi</module>
+ 		    <module>bundles/org.eclipse.equinox.cm</module>
+ 		    <module>bundles/org.eclipse.equinox.console</module>
+@@ -216,9 +216,10 @@
+ 		    <module>bundles/org.eclipse.equinox.launcher.cocoa.macosx</module>
+ 		    <module>bundles/org.eclipse.equinox.launcher.cocoa.macosx.x86_64</module>
+ 		    <module>bundles/org.eclipse.equinox.launcher.cocoa.macosx.aarch64</module>
+-		    <module>bundles/org.eclipse.equinox.launcher.gtk.linux.aarch64</module>
+-		    <module>bundles/org.eclipse.equinox.launcher.gtk.linux.ppc64le</module>
+-		    <module>bundles/org.eclipse.equinox.launcher.gtk.linux.x86_64</module>
++		    <module>bundles/org.eclipse.equinox.launcher.gtk.freebsd.aarch64</module>
++		    <module>bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64</module>
++		    <module>bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le</module>
++		    <module>bundles/org.eclipse.equinox.launcher.gtk.freebsd.amd64</module>
+ 		    <module>bundles/org.eclipse.equinox.launcher.win32.win32.aarch64</module>
+ 		    <module>bundles/org.eclipse.equinox.launcher.win32.win32.x86_64</module>
+ 		    <module>bundles/org.eclipse.equinox.launcher.tests</module>
