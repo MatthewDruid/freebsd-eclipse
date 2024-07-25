@@ -1,3 +1,5 @@
+*.swp
+
 # distribution archive
 distfiles
 
