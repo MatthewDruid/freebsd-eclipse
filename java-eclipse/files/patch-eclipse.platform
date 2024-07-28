@@ -188,3 +188,25 @@ diff -ru eclipse.platform/resources/bundles/org.eclipse.core.filesystem.freebsd.
    <version>1.4.200-SNAPSHOT</version>
    <packaging>eclipse-plugin</packaging>
  
+diff -ru eclipse.platform/runtime/bundles/org.eclipse.core.runtime/src/org/eclipse/core/runtime/Platform.java eclipse.platform/runtime/bundles/org.eclipse.core.runtime/src/org/eclipse/core/runtime/Platform.java
+--- eclipse.platform/runtime/bundles/org.eclipse.core.runtime/src/org/eclipse/core/runtime/Platform.java	0000-00-00 00:00:00.000000000 +0000
++++ eclipse.platform/runtime/bundles/org.eclipse.core.runtime/src/org/eclipse/core/runtime/Platform.java	0000-00-00 00:00:00.000000000 +0000
+@@ -103,6 +103,9 @@
+ 			return is(OS_MACOSX);
+ 		}
+ 
++        public static boolean isFreeBSD() {
++            return is(OS_FREEBSD);
++        }
+ 	}
+ 	/**
+ 	 * The unique identifier constant (value "<code>org.eclipse.core.runtime</code>")
+@@ -325,6 +328,8 @@
+ 	 * @since 3.0
+ 	 */
+ 	public static final String OS_MACOSX = "macosx";//$NON-NLS-1$
++
++    public static final String OS_FREEBSD = "freebsd";
+ 
+ 	/**
+ 	 * Constant string (value "unknown") indicating the platform is running on a
