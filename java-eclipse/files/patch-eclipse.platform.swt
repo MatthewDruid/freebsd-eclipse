@@ -332,7 +332,7 @@ diff -ru eclipse.platform.swt/binaries/org.eclipse.swt.gtk.freebsd.powerpc64le/b
 diff -ru eclipse.platform.swt/binaries/pom.xml eclipse.platform.swt/binaries/pom.xml
 --- eclipse.platform.swt/binaries/pom.xml	0000-00-00 00:00:00.000000000 +0000
 +++ eclipse.platform.swt/binaries/pom.xml	0000-00-00 00:00:00.000000000 +0000
-@@ -35,9 +35,11 @@
+@@ -35,9 +35,10 @@
  	<modules>
  		<module>org.eclipse.swt.cocoa.macosx.x86_64</module>
  		<module>org.eclipse.swt.cocoa.macosx.aarch64</module>
@@ -340,7 +340,6 @@ diff -ru eclipse.platform.swt/binaries/pom.xml eclipse.platform.swt/binaries/pom
 -		<module>org.eclipse.swt.gtk.linux.ppc64le</module>
 -		<module>org.eclipse.swt.gtk.linux.x86_64</module>
 +		<module>org.eclipse.swt.gtk.freebsd.aarch64</module>
-+		<module>org.eclipse.swt.gtk.freebsd.loongarch64</module>
 +		<module>org.eclipse.swt.gtk.freebsd.powerpc64</module>
 +		<module>org.eclipse.swt.gtk.freebsd.powerpc64le</module>
 +		<module>org.eclipse.swt.gtk.freebsd.amd64</module>

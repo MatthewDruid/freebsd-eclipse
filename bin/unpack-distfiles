@@ -116,6 +116,15 @@ rename_arch ()
 	#find . -name '*.so' -delete
 )
 
+(
+    cd ${AGGR_MODULE}
+
+    mv equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.aarch64/launcher.gtk.linux.aarch64.properties equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.aarch64/launcher.gtk.freebsd.aarch64.properties
+    mv equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.amd64/launcher.gtk.linux.x86_64.properties equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.amd64/launcher.gtk.freebsd.amd64.properties
+    mv equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64/launcher.gtk.linux.ppc64le.properties equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64/launcher.gtk.freebsd.powerpc64.properties
+    mv equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le/launcher.gtk.linux.ppc64le.properties equinox/bundles/org.eclipse.equinox.launcher.gtk.freebsd.powerpc64le/launcher.gtk.freebsd.powerpc64le.properties
+)
+
 # Make a baseline copy
 echo "INFO: Making baseline copy"
 cd ${AGGR_MODULE} && find . -print | cpio -pdum ../${BASELINE}
